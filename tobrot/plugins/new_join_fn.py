@@ -18,13 +18,15 @@ async def new_join_f(client, message):
     await message.delete(revoke=True)
 
 
+ 
 async def help_message_f(client, message):
-    # await message.reply_text("no one gonna help you 🤣🤣🤣🤣", quote=True)
-    # channel_id = str(AUTH_CHANNEL)[4:]
-    # message_id = 99
+    # await message.reply_text("", quote=True)
+    #channel_id = str(AUTH_CHANNEL)[4:]
+    #message_id = 99
     # display the /help
-
-    await message.reply_text(
-        """Hello There ! \n \n This is Leech Group 🧲 \n \n Click The Below button To Know How To Use Me \n \n Thanks For Joining here ❤️.""",
-        disable_web_page_preview=True,
-    )
+    DEV = os.environ.get("DEV", "@MaxxBots")
+    button = []
+    link = "https://t.me/MaxxBots"
+    button.append([pyrogram.InlineKeyboardButton(text="Click to Read", url=f"{link}")])
+    button_markup = pyrogram.InlineKeyboardMarkup(button)
+    await message.reply_text(f"**Hello** 👾 !\n__This is Telegram Leech bot 🧲__ \n__Click Below to know how to use me 📝__\n\n**Developer 👨🏻‍💻**: {DEV}",reply_markup=button_markup)
