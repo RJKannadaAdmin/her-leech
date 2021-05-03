@@ -26,7 +26,7 @@ async def help_message_f(client, message):
     # display the /help
     DEV = os.environ.get("DEV", "@MaxxBots")
     button = []
-    link = "https://t.me/MaxxBots"
+    link = "https://t.me/c/1497401594/159"
     button.append([pyrogram.InlineKeyboardButton(text="Click to Read", url=f"{link}")])
     button_markup = pyrogram.InlineKeyboardMarkup(button)
-    await message.reply_text(f"**Hello** 👾 !\n__This is Telegram Leech bot 🧲__ \n__Click Below to know how to use me 📝__\n\n**Developer 👨🏻‍💻**: {DEV}",reply_markup=button_markup)
+    await message.reply_text(f"**Hello** 👾 !\n__This is Telegram Leech Group 🧲__ \n__Click Below to know how to use me 📝__\n\n**Developer 👨🏻‍💻**: {DEV}",reply_markup=button_markup)
