@@ -25,10 +25,6 @@ async def help_message_f(client, message):
     # display the /help
 
     await message.reply_text(
-        """Hi Bro
-
-Welcome To Our Family.. Thanks For Joining Here..
-
-Don't Waste Time Let's Start 😘.""",
+        """Hello There ! \n \n This is Leech Group 🧲 \n \n Click The Below button To Know How To Use Me \n \n Thanks For Joining here ❤️.""",
         disable_web_page_preview=True,
     )
