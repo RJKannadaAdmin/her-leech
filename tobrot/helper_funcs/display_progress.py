@@ -89,7 +89,7 @@ class Progress:
                 round(percentage, 2),
             )
 
-            tmp = progress + "{0} of {1}\nSpeed: {2}/s\nETA: {3}\n".format(
+            tmp = progress + "{0} of {1}\n \nSpeed: {2}/s\n \nETA: {3}\n".format(
                 humanbytes(current),
                 humanbytes(total),
                 humanbytes(speed),
